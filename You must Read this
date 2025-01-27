@@ -1,0 +1,486 @@
+# How-to-make-a-Basic-Website
+I explain "How to make a Basic Website"
+
+First You should make some files from Visual Studio Code.
+
+This files names: "MainMenu.html" , "About.html" , "Communication.html" , "CommunicationThanks.html" , "Home.html" , "News.html"
+
+After Go to the Extensions(Ctrl + Shift + X) , write Live Server and install it.
+
+
+
+Go to the MainMenu.html file and write this(Do copy + paste):
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Menü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #35424a;
+            margin-bottom: 30px;
+        }
+
+        nav {
+            background-color: #35424a;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4a5866;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ana Menu</h1>
+    <nav>
+        <a href="http://127.0.0.1:5500/Projem/Home.html">Ev</a>  //copy your URL and paste here(You must delete my URL)
+        <a href="http://127.0.0.1:5500/Projem/News.html">Haberler</a>  //copy your URL and paste here(You must delete my URL)
+        <a href="http://127.0.0.1:5500/Projem/Communication.html"></a>  //copy your URL and paste here(You must delete my URL)
+        <a href="http://127.0.0.1:5500/Projem/About.html">About</a>   //copy your URL and paste here(You must delete my URL)
+    </nav>
+</body>
+</html>
+
+
+
+Then press right click and click "Open with Live Server" and after it will opening on your browser.(Do this all your files.)
+
+Copy the URL's and paste which I write.
+
+and Home.html turn for write this codes:
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #35424a;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4a5866;
+            margin-top: 30px;
+            border-bottom: 2px solid #35424a;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #35424a;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 20px 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        center {
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1, h2, h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Ev Kısmına Hoşgeldiniz</h1></center>
+    <h2>Home ile İlgili Bilgiler</h2>
+    <h3>Hoş Geldiniz!</h3>
+    <p>Web sitemize hoş geldiniz! Burada, sizin için özel olarak hazırlanmış içerikler, güncellemeler ve en son haberlerle dolu bir dünya bulacaksınız. Amacımız, ziyaretçilerimize en kaliteli ve bilgilendirici deneyimi sunmaktır.</p>
+
+    <p>Bu platformda, farklı kategorilerdeki içeriklerimizi keşfedebilir, ilgi alanlarınıza uygun makaleler okuyabilir ve güncel gelişmelerden haberdar olabilirsiniz. Ekibimiz, sürekli olarak yeni içerikler üreterek sizi bilgilendirmeyi ve eğlendirmeyi hedefliyor.</p>
+
+    <h2>Öne Çıkan Konular</h2>
+    <ul>
+        <li><strong>İpuçları ve Tavsiyeler:</strong> Uzmanlarımızdan pratik bilgiler ve öneriler alın.</li>
+        <li><strong>Topluluk Etkinlikleri:</strong> Katılabileceğiniz etkinlikler ve buluşmalar hakkında bilgi edinin.</li>
+    </ul>
+
+    <p>Bizimle birlikte bu yolculuğa çıkmaya hazır mısınız? Herhangi bir sorunuz veya öneriniz varsa, lütfen bizimle iletişime geçmekten çekinmeyin. Sizin geri bildirimleriniz, daha iyi bir deneyim sunmamıza yardımcı olacaktır.</p>
+
+    <p>Keyifli Gezintiler Dileriz!</p>
+
+</body>
+</html>
+
+
+Communication.html code:
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .submit-button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .submit-button:hover {
+            background: #4a5866;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>İletişim</h1>
+    </div>
+
+    <div class="contact-container">
+        <h2>Bizimle İletişime Geçin</h2>
+        <p>Herhangi bir sorunuz veya öneriniz varsa, lütfen aşağıdaki formu doldurun. Size en kısa sürede geri dönüş yapacağız.</p>
+        <form class="contact-form" action="http://127.0.0.1:5500/Projem/CommunicationThanks.html" method="GET"> //Paste your URL(Delete my URL)
+            <div class="form-group">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Gönder</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+ContractThanks.html code:
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teşekkür</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .thank-you-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .thank-you-message {
+            font-size: 1.5em;
+            color: #35424a;
+            margin-bottom: 15px;
+        }
+        .thank-you-note {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .back-button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .back-button:hover {
+            background: #4a5866;
+        }
+    </style>
+    <script>
+        function redirectToHome() {
+            window.location.href = "http://127.0.0.1:5500/Projem/AnaMenu.html"; //Paste your MainMenu URL
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Teşekkür Ederiz!</h1>
+    </div>
+
+    <div class="thank-you-container">
+        <p class="thank-you-message">Mesajınız için teşekkür ederiz!</p>
+        <p class="thank-you-note">Geri bildiriminiz bizim için çok değerli. En kısa sürede size dönüş yapacağız.</p>
+        <button class="back-button" onclick="redirectToHome();">Geri Dön</button>
+    </div>
+
+</body>
+</html>
+
+News.html code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haberler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .news-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .news-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-title {
+            font-size: 1.5em;
+            color: #35424a;
+        }
+        .news-date {
+            font-size: 0.9em;
+            color: #999;
+        }
+        .news-content {
+            margin-top: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Haberler</h1>
+    </div>
+
+    <div class="news-container">
+        <div class="news-item">
+            <h2 class="news-title">Yeni Eğitim Programı Başlatıldı</h2>
+            <p class="news-date">14 Ocak 2025</p>
+            <p class="news-content">Milli Eğitim Bakanlığı, öğrencilerin STEM (Bilim, Teknoloji, Mühendislik ve Matematik) alanındaki yeteneklerini geliştirmek amacıyla yeni bir eğitim programı başlattı. Program, çeşitli atölye çalışmaları ve projelerle zenginleştirilerek, öğrencilere pratik deneyim kazandırmayı hedefliyor.</p>
+        </div>
+        <div class="news-item">
+            <h2 class="news-title">Bardak Gücü Şampiyon Oldu</h2>
+            <p class="news-date">15 Ocak 2025</p>
+            <p class="news-content">Bardak Gücü, bu sezonki şampiyonluk unvanını kazandı. Final maçında rakiplerini 3-1 yenerek büyük bir başarıya imza atan Bardak Gücü, taraftarlarından büyük destek aldı. Takım kaptanı, "Bu zafer, hepimizin ortak bir başarısıdır." dedi.</p>
+        </div>
+        <div class="news-item">
+            <h2 class="news-title">Yenilikçi Teknoloji Fuarı Başladı</h2>
+            <p class="news-date">16 Ocak 2025</p>
+            <p class="news-content"> Bu yıl ki Yenilikçi Teknoloji Fuarı, İstanbul'da kapılarını açtı. Fuar, en son teknolojik gelişmeleri ve yenilikçi ürünleri sergileyen birçok katılımcıyı bir araya getiriyor. Katılımcılar, yapay zeka, sanal gerçeklik ve daha birçok alanda en son trendleri keşfetme fırsatı bulacaklar.</p>
+        </div>
+    </div>
+<body>
+    
+</body>
+</html>
+
+About.html Code:
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .about-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .about-title {
+            font-size: 2em;
+            color: #35424a;
+            margin-bottom: 10px;
+        }
+        .about-content {
+            color: #555;
+            line-height: 1.6;
+        }
+        .back-button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .back-button:hover {
+            background: #4a5866;
+        }
+    </style>
+    <script>
+        function redirectToHome() {
+            window.location.href = "http://127.0.0.1:5500/Projem/AnaMenu.html"; //Paste Your MainMenu URL(Delete my URL)
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Hakkında</h1>
+    </div>
+
+    <div class="about-container">
+        <h2 class="about-title">Biz Kimiz?</h2>
+        <p class="about-content">
+            Biz, kullanıcılarımıza en iyi deneyimi sunmayı hedefleyen bir platformuz. 
+            Amacımız, kullanıcılarımızın ihtiyaçlarına yönelik çözümler sunmak ve 
+            onlara kaliteli hizmetler sağlamaktır.
+        </p>
+        <p class="about-content">
+            Ekibimiz, alanında uzman profesyonellerden oluşmaktadır ve sürekli 
+            gelişim ve yenilikçilik ilkeleri doğrultusunda çalışmaktadır.
+        </p>
+        <button class="back-button" onclick="redirectToHome();">Geri Dön</button>
+    </div>
+
+</body>
+</html>
+
+This is all.
+
+İf you have a problem for this Website write to me.
+
