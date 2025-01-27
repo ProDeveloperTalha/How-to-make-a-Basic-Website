@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .about-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .about-title {
+            font-size: 2em;
+            color: #35424a;
+            margin-bottom: 10px;
+        }
+        .about-content {
+            color: #555;
+            line-height: 1.6;
+        }
+        .back-button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .back-button:hover {
+            background: #4a5866;
+        }
+    </style>
+    <script>
+        function redirectToHome() {
+            window.location.href = "http://127.0.0.1:5500/Projem/AnaMenu.html";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Hakkında</h1>
+    </div>
+
+    <div class="about-container">
+        <h2 class="about-title">Biz Kimiz?</h2>
+        <p class="about-content">
+            Biz, kullanıcılarımıza en iyi deneyimi sunmayı hedefleyen bir platformuz. 
+            Amacımız, kullanıcılarımızın ihtiyaçlarına yönelik çözümler sunmak ve 
+            onlara kaliteli hizmetler sağlamaktır.
+        </p>
+        <p class="about-content">
+            Ekibimiz, alanında uzman profesyonellerden oluşmaktadır ve sürekli 
+            gelişim ve yenilikçilik ilkeleri doğrultusunda çalışmaktadır.
+        </p>
+        <button class="back-button" onclick="redirectToHome();">Geri Dön</button>
+    </div>
+
+</body>
+</html>

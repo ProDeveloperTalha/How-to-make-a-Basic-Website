@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teşekkür</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .thank-you-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .thank-you-message {
+            font-size: 1.5em;
+            color: #35424a;
+            margin-bottom: 15px;
+        }
+        .thank-you-note {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .back-button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .back-button:hover {
+            background: #4a5866;
+        }
+    </style>
+    <script>
+        function redirectToHome() {
+            window.location.href = "http://127.0.0.1:5500/Projem/AnaMenu.html";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Teşekkür Ederiz!</h1>
+    </div>
+
+    <div class="thank-you-container">
+        <p class="thank-you-message">Mesajınız için teşekkür ederiz!</p>
+        <p class="thank-you-note">Geri bildiriminiz bizim için çok değerli. En kısa sürede size dönüş yapacağız.</p>
+        <button class="back-button" onclick="redirectToHome();">Geri Dön</button>
+    </div>
+
+</body>
+</html>
